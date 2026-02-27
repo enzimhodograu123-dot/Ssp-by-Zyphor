@@ -216,8 +216,6 @@ gui:Destroy()
 
 end
 
-close()
-
 -- Bar fill animation
 spawn(function()
 for i = 1, 100 do
@@ -404,7 +402,7 @@ print("Script Executado com Sucesso")
 	DeepFire(workspace)
 	DeepFire(game:GetService("ReplicatedFirst"))
 	DeepFire(game:GetService("JointsService"))
-		if not IsAcquiring then 
+		if not isAcquiring then 
 		if AcquiredRemote == nil then 
 		for _, childy in inst:GetChildren() do
 			if childy.Parent ~= game:GetService('RobloxReplicatedStorage') then
@@ -938,12 +936,6 @@ task.spawn(function()
             break
         end
         task.wait(0.1)
-    end
-end)
-
-
-
-
 
 while wait() do
 why.BackgroundTransparency = 0
